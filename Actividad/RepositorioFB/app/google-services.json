@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "871321612033",
+    "firebase_url": "https://repositoriofb-5b21a-default-rtdb.firebaseio.com",
+    "project_id": "repositoriofb-5b21a",
+    "storage_bucket": "repositoriofb-5b21a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871321612033:android:afad1deb8bd71894ab7500",
+        "android_client_info": {
+          "package_name": "com.norbel.repositoriofb"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDooOZfOa6o57jUXqU-nrErZP1MwUwFlCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

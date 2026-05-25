@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RepositorioFB</string>
+    <string name="app_seccion">Sección:</string>
+    <string name="app_area">Asignatura:</string>
+    <string name="app_tema">Escribe el tema:</string>
+    <string name="app_clase">Registrar Clase</string>
+
+    <string-array name="seccion">
+        <item>Ing. de Sistemas</item>
+        <item>Ing. Informática</item>
+        <item>Ing. de Software</item>
+    </string-array>
+
+    <string-array name="asignaturas">
+        <item>Inteligencia Artificial</item>
+        <item>Tecnologías Móviles</item>
+        <item>Business Intelligence</item>
+        <item>Programación Web</item>
+    </string-array>
+</resources>
