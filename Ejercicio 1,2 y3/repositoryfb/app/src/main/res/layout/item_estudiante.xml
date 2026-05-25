@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    android:elevation="4dp">
+
+    <TextView
+        android:id="@+id/tvItemNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#1E293B" />
+
+    <TextView
+        android:id="@+id/tvItemCarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Carrera"
+        android:textSize="15sp"
+        android:textColor="#475569" />
+
+    <TextView
+        android:id="@+id/tvItemCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Curso"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:textColor="#64748B" />
+
+</LinearLayout>

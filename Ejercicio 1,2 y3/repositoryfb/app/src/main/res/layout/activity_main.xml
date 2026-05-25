@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml — CRUD completo con diseño moderno -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:padding="16dp">
+
+    <!-- Contenedor principal -->
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@android:color/white"
+        android:elevation="6dp"
+        android:layout_margin="6dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CRUD Estudiantes — Firebase"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="14dp"
+            android:hint="Nombre"
+            android:padding="12dp"
+            android:textSize="15sp"
+            android:backgroundTint="#3B82F6"
+            android:inputType="textPersonName" />
+
+
+        <Spinner
+            android:id="@+id/spinCarrera"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="14dp"
+            android:background="#E2E8F0"
+            android:padding="8dp"
+            android:entries="@array/carreras"
+            android:spinnerMode="dropdown" />
+
+
+        <Spinner
+            android:id="@+id/spinCurso"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginBottom="18dp"
+            android:background="#E2E8F0"
+            android:padding="8dp"
+            android:entries="@array/cursos"
+            android:spinnerMode="dropdown" />
+
+        <!-- CRUD -->
+        <LinearLayout
+            android:id="@+id/llBotones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnCrear"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Crear"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#2563EB"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/btnActualizar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Actualizar"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#0F766E"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Eliminar"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#DC2626"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="#D1D5DB" />
+
+
+        <TextView
+            android:id="@+id/tvLista"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista de Estudiantes"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="10dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerEstudiantes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingBottom="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

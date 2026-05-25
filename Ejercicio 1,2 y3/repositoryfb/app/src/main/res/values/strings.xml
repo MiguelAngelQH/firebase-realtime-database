@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">EstudiantesFB</string>
+    <string name="lbl_nombre">Nombre:</string>
+    <string name="lbl_carrera">Carrera:</string>
+    <string name="lbl_curso">Curso:</string>
+    <string name="hint_nombre">Escribe el nombre</string>
+    <string name="hint_carrera">Escribe la carrera</string>
+    <string name="hint_curso">Escribe el curso</string>
+    <string name="btn_guardar">Guardar Estudiante</string>
+
+    <string-array name="carreras">
+        <item>Ing. de Sistemas</item>
+        <item>Ing. Informática</item>
+        <item>Ing. de Software</item>
+    </string-array>
+
+    <string-array name="cursos">
+        <item>Tecnologías Móviles</item>
+        <item>Inteligencia Artificial</item>
+        <item>Programación Web</item>
+        <item>Base de Datos</item>
+    </string-array>
+</resources>
